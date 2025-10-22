@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>فريق العمل | Group-One Students</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- 🔹 شريط التنقّل -->
+  <nav class="navbar">
+    <div class="logo">Group-One Project</div>
+    <div class="menu-toggle" id="menu-toggle">&#9776;</div>
+    <ul class="nav-links" id="nav-links">
+      <li><a href="index.html">الرئيسية</a></li>
+      <li><a href="about.html">حول المشروع</a></li>
+      <li><a href="team.html" class="active">الفريق</a></li>
+      <li><a href="contact.html">تواصل</a></li>
+    </ul>
+  </nav>
+
+  <!-- 🔹 المحتوى الرئيسي -->
+  <section class="page-section" style="margin-top:90px;">
+    <h1 style="text-align:center; margin-bottom:20px;">فريق العمل - Group-One Students</h1>
+    <p style="text-align:center; margin-bottom:40px;">نحن مجموعة من طلاب مادة DWD243، عملنا معاً لتطوير هذا المشروع.</p>
+
+    <div style="max-width:900px; margin:auto;">
+      <table style="width:100%; border-collapse:collapse; text-align:center;">
+        <thead style="background:#0078ff; color:#fff;">
+          <tr>
+            <th style="padding:12px;">الاسم</th>
+            <th style="padding:12px;">المعرف الجامعي</th>
+            <th style="padding:12px;">الدور</th>
+          </tr>
+        </thead>
+        <tbody style="background:#f8f8f8;">
+          <tr>
+            <td style="padding:12px;">Abdullah Ahmed Kedrawe</td>
+            <td style="padding:12px;">202500000</td>
+            <td style="padding:12px;">مصمم الواجهة، كاتب الكود</td>
+          </tr>
+          <tr>
+            <td style="padding:12px;">Essa Jafari</td>
+            <td style="padding:12px;">202500000</td>
+            <td style="padding:12px;">—</td>
+          </tr>
+          <tr>
+            <td style="padding:12px;">Muhannad</td>
+            <td style="padding:12px;">202500000</td>
+            <td style="padding:12px;">—</td>
+          </tr>
+          <tr>
+            <td style="padding:12px;">Abdullah</td>
+            <td style="padding:12px;">202500000</td>
+            <td style="padding:12px;">—</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </section>
+
+  <footer>
+    <p>© 2025 Group-One Students | مادة DWD243</p>
+  </footer>
+
+  <script>
+    const toggle = document.getElementById('menu-toggle');
+    const links = document.getElementById('nav-links');
+    toggle.addEventListener('click', () => {
+      links.classList.toggle('active');
+    });
+  </script>
+
+</body>
+</html>

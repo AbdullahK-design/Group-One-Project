@@ -3,110 +3,44 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>مشروع التخزين والاستضافة السحابية - DWD243</title>
-
-  <style>
-    * {
-      margin: 0;
-      padding: 0;
-      box-sizing: border-box;
-    }
-
-    body, html {
-      height: 100%;
-      font-family: "Tahoma", Arial, sans-serif;
-    }
-
-    /* الخلفية الكاملة */
-    .hero {
-      background: url('team.jpg') no-repeat center center/cover;
-      height: 100vh;
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      align-items: center;
-      text-align: center;
-      color: white;
-      position: relative;
-    }
-
-    /* طبقة شفافة فوق الصورة لزيادة التباين */
-    .hero::before {
-      content: "";
-      position: absolute;
-      top: 0;
-      left: 0;
-      width: 100%;
-      height: 100%;
-      background: rgba(0, 0, 0, 0.55);
-      z-index: 0;
-    }
-
-    /* محتوى الصفحة فوق الطبقة */
-    .hero-content {
-      position: relative;
-      z-index: 1;
-      max-width: 800px;
-      padding: 20px;
-    }
-
-    h1 {
-      font-size: 2.5rem;
-      margin-bottom: 15px;
-    }
-
-    p {
-      font-size: 1.1rem;
-      line-height: 1.6;
-      margin-bottom: 20px;
-    }
-
-    a.button {
-      display: inline-block;
-      padding: 10px 20px;
-      color: #fff;
-      background: #0078ff;
-      text-decoration: none;
-      border-radius: 4px;
-      transition: 0.3s;
-    }
-
-    a.button:hover {
-      background: #005fcc;
-    }
-
-    footer {
-      text-align: center;
-      color: #ccc;
-      background: #111;
-      padding: 15px 0;
-      font-size: 0.9rem;
-    }
-
-    footer span {
-      color: #4da3ff;
-    }
-  </style>
+  <title>الرئيسية | مشروع التخزين والاستضافة السحابية</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
-  <div class="hero">
+  <!-- 🔹 شريط التنقّل -->
+  <nav class="navbar">
+    <div class="logo">DWD243 Project</div>
+    <div class="menu-toggle" id="menu-toggle">&#9776;</div>
+    <ul class="nav-links" id="nav-links">
+      <li><a href="index.html">الرئيسية</a></li>
+      <li><a href="about.html">حول المشروع</a></li>
+      <li><a href="team.html">الفريق</a></li>
+      <li><a href="contact.html">تواصل</a></li>
+    </ul>
+  </nav>
+
+  <!-- 🔹 قسم الصفحة الرئيسية -->
+  <header class="hero">
     <div class="hero-content">
       <h1>مرحباً بكم في مشروع التخزين والاستضافة السحابية</h1>
-      <p>
-        هذا المشروع يوضح كيفية استضافة موقع باستخدام GitHub Pages وربطه بـ Google Drive
-        ضمن مادة <strong>DWD243</strong>.
-      </p>
-      <p>المجموعة: <strong>Group-One</strong> · الأعضاء: <strong>Abdullah Kedrawe - 230259313</strong></p>
+      <p>شرح عملي لاستضافة موقع عبر GitHub Pages وربطه بـ Google Drive.</p>
       <a href="https://drive.google.com/drive/folders/1NW0X3PqgHXYqWnYfopnT6uhxWY7pmTtU?usp=drive_link" 
-         target="_blank" class="button">
-        فتح مجلد المشروع على Google Drive
-      </a>
+         target="_blank" class="button">عرض مجلد المشروع</a>
     </div>
-  </div>
+  </header>
 
   <footer>
-    <p>© <span>Group-One</span> | مادة DWD243 - 2025</p>
+    <p>© 2025 Group-One | مادة DWD243</p>
   </footer>
+
+  <script>
+    // 🔸 وظيفة القائمة (ثلاث شرطات)
+    const toggle = document.getElementById('menu-toggle');
+    const links = document.getElementById('nav-links');
+    toggle.addEventListener('click', () => {
+      links.classList.toggle('active');
+    });
+  </script>
 </body>
 </html>

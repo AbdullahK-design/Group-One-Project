@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>تواصل معنا | Group-One Students</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- 🔹 شريط التنقّل -->
+  <nav class="navbar">
+    <div class="logo">Group-One Project</div>
+    <div class="menu-toggle" id="menu-toggle">&#9776;</div>
+    <ul class="nav-links" id="nav-links">
+      <li><a href="index.html">الرئيسية</a></li>
+      <li><a href="about.html">حول المشروع</a></li>
+      <li><a href="team.html">الفريق</a></li>
+      <li><a href="contact.html" class="active">تواصل</a></li>
+    </ul>
+  </nav>
+
+  <!-- 🔹 المحتوى الرئيسي -->
+  <section class="page-section" style="margin-top:90px; text-align:center;">
+    <h1>للتواصل مع الفريق</h1>
+    <p style="margin:20px auto; max-width:600px;">
+      نرحب بجميع الاستفسارات أو الملاحظات المتعلقة بمشروعنا.
+      يمكنك التواصل معنا مباشرة عبر البريد الإلكتروني التالي:
+    </p>
+
+    <a href="mailto:qen4630@gmail.com" class="button" style="margin-top:10px;">إرسال بريد إلكتروني</a>
+
+    <div style="margin-top:50px;">
+      <h3>مواقع وروابط مفيدة</h3>
+      <ul style="list-style:none; padding:0; margin-top:15px;">
+        <li><a href="https://drive.google.com/drive/folders/1NW0X3PqgHXYqWnYfopnT6uhxWY7pmTtU?usp=drive_link" target="_blank">📂 مجلد المشروع على Google Drive</a></li>
+        <li><a href="https://pages.github.com/" target="_blank">🌐 GitHub Pages</a></li>
+      </ul>
+    </div>
+  </section>
+
+  <footer>
+    <p>© 2025 Group-One Students | مادة DWD243</p>
+  </footer>
+
+  <script>
+    const toggle = document.getElementById('menu-toggle');
+    const links = document.getElementById('nav-links');
+    toggle.addEventListener('click', () => {
+      links.classList.toggle('active');
+    });
+  </script>
+
+</body>
+</html>

@@ -2,64 +2,111 @@
 <html lang="ar" dir="rtl">
 <head>
   <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>مشروع السحابة - DWD243</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>مشروع التخزين والاستضافة السحابية - DWD243</title>
 
   <style>
-    body {
-      font-family: Tahoma, Arial, sans-serif;
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body, html {
+      height: 100%;
+      font-family: "Tahoma", Arial, sans-serif;
+    }
+
+    /* الخلفية الكاملة */
+    .hero {
+      background: url('team.jpg') no-repeat center center/cover;
+      height: 100vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      color: white;
+      position: relative;
+    }
+
+    /* طبقة شفافة فوق الصورة لزيادة التباين */
+    .hero::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: rgba(0, 0, 0, 0.55);
+      z-index: 0;
+    }
+
+    /* محتوى الصفحة فوق الطبقة */
+    .hero-content {
+      position: relative;
+      z-index: 1;
+      max-width: 800px;
+      padding: 20px;
+    }
+
+    h1 {
+      font-size: 2.5rem;
+      margin-bottom: 15px;
+    }
+
+    p {
+      font-size: 1.1rem;
       line-height: 1.6;
-      padding: 24px;
-      direction: rtl;
+      margin-bottom: 20px;
     }
 
-    header {
-      border-bottom: 1px solid #ddd;
-      padding-bottom: 12px;
-      margin-bottom: 18px;
+    a.button {
+      display: inline-block;
+      padding: 10px 20px;
+      color: #fff;
+      background: #0078ff;
+      text-decoration: none;
+      border-radius: 4px;
+      transition: 0.3s;
     }
 
-    img {
-      max-width: 300px;
-      height: auto;
-      border-radius: 6px;
+    a.button:hover {
+      background: #005fcc;
     }
 
-    .meta {
-      color: #555;
-      font-size: 0.95em;
-      margin-bottom: 12px;
+    footer {
+      text-align: center;
+      color: #ccc;
+      background: #111;
+      padding: 15px 0;
+      font-size: 0.9rem;
+    }
+
+    footer span {
+      color: #4da3ff;
     }
   </style>
 </head>
 
 <body>
-  <header>
-    <h1>مرحباً بكم في مشروع التخزين والاستضافة السحابية</h1>
-    <div class="meta"> Group: Group-One · Members: Abdullah Kedrawe - 230259313</div>
-  </header>
-
-  <section>
-    <p>
-      هذا المشروع يوضح كيفية رفع صفحة ويب باستخدام GitHub Pages وربطها بمجلد Google Drive
-      ضمن مادة DWD243.
-    </p>
-
-    <h3>رابط المشروع:</h3>
-    <ul>
-      <li>
-        <a href="https://drive.google.com/drive/folders/1NW0X3PqgHXYqWnYfopnT6uhxWY7pmTtU?usp=drive_link" target="_blank">
-          فتح مجلد المشروع على Google Drive
-        </a>
-      </li>
-    </ul>
-
-    <h3>رؤية توضيحية</h3>
-    <p><img src="team.jpg" alt="صورة الفريق"></p>
-  </section>
+  <div class="hero">
+    <div class="hero-content">
+      <h1>مرحباً بكم في مشروع التخزين والاستضافة السحابية</h1>
+      <p>
+        هذا المشروع يوضح كيفية استضافة موقع باستخدام GitHub Pages وربطه بـ Google Drive
+        ضمن مادة <strong>DWD243</strong>.
+      </p>
+      <p>المجموعة: <strong>Group-One</strong> · العضو: <strong>Abdullah Kedrame - 230259313</strong></p>
+      <a href="https://drive.google.com/drive/folders/1NW0X3PqgHXYqWnYfopnT6uhxWY7pmTtU?usp=drive_link" 
+         target="_blank" class="button">
+        فتح مجلد المشروع على Google Drive
+      </a>
+    </div>
+  </div>
 
   <footer>
-    <p>نُفِّذ بواسطة Group-One لمادة DWD243 © 2025</p>
+    <p>© <span>Group-One</span> | مادة DWD243 - 2025</p>
   </footer>
 </body>
 </html>

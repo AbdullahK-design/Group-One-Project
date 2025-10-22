@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>حول المشروع | DWD243</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- استخدم نفس الكود الخاص بالـ <nav> من الصفحة الرئيسية -->
+  <nav class="navbar">
+    <div class="logo">DWD243 Project</div>
+    <div class="menu-toggle" id="menu-toggle">&#9776;</div>
+    <ul class="nav-links" id="nav-links">
+      <li><a href="index.html">الرئيسية</a></li>
+      <li><a href="about.html">حول المشروع</a></li>
+      <li><a href="team.html">الفريق</a></li>
+      <li><a href="contact.html">تواصل</a></li>
+    </ul>
+  </nav>
+
+  <section style="margin-top:80px; padding:40px; text-align:center;">
+    <h1>حول المشروع</h1>
+    <p>هذا المشروع يوضح كيفية استضافة مواقع ويب ثابتة باستخدام GitHub Pages
+       ضمن مادة DWD243. تم إنشاؤه بواسطة مجموعة Group-One.</p>
+  </section>
+
+  <footer>
+    <p>© 2025 Group-One | مادة DWD243</p>
+  </footer>
+
+  <script>
+    const toggle = document.getElementById('menu-toggle');
+    const links = document.getElementById('nav-links');
+    toggle.addEventListener('click', () => {
+      links.classList.toggle('active');
+    });
+  </script>
+</body>
+</html>
